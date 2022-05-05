@@ -27,7 +27,7 @@
 static const KeyButton kButtonMask = (KeyButton)(IKeyState::kNumButtons - 1);
 
 static const KeyID s_decomposeTable[] = {
-    // spacing version of dead keys
+    // spacing version of dead key
     0x0060, 0x0300, 0x0020, 0, // grave,        dead_grave,       space
     0x00b4, 0x0301, 0x0020, 0, // acute,        dead_acute,       space
     0x005e, 0x0302, 0x0020, 0, // asciicircum,  dead_circumflex,  space
