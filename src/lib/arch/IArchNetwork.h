@@ -178,7 +178,7 @@ public:
     Waits up to \c timeout seconds for some socket to become readable
     and/or writable (or indefinitely if \c timeout < 0).  Returns the
     number of sockets that were readable (if readability was being
-    queried) or writable (if writablility was being queried) and sets
+    queried) or writable (if writability was being queried) and sets
     the \c m_revents members of the entries.  \c kPOLLERR and \c kPOLLNVAL
     are set in \c m_revents as appropriate.  If a socket indicates
     \c kPOLLERR then \c throwErrorOnSocket() can be used to determine

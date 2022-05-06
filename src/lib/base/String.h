@@ -71,9 +71,9 @@ Finds the last dot and remove all characters from the dot to the end
 */
 std::string removeFileExt(std::string filename);
 
-//! Convert into hexdecimal
+//! Convert into hexadecimal
 /*!
-Convert each character in \c subject into hexdecimal form with \c width
+Convert each character in \c subject into hexadecimal form with \c width
 */
 std::string to_hex(const std::vector<std::uint8_t>& subject, int width, const char fill = '0');
 
@@ -86,9 +86,9 @@ Convert each character in \c subject to uppercase
 */
 void uppercase(std::string& subject);
 
-//! Remove all specific char in suject
+//! Remove all specific char in subject
 /*!
-Remove all specific \c c in \c suject
+Remove all specific \c c in \c subject
 */
 void removeChar(std::string& subject, const char c);
 
@@ -112,7 +112,7 @@ std::vector<std::string> splitString(std::string string, const char c);
 
 //! Case-insensitive comparisons
 /*!
-This class provides case-insensitve comparison functions.
+This class provides case-insensitive comparison functions.
 */
 class CaselessCmp {
     public:

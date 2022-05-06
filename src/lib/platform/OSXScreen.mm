@@ -58,7 +58,7 @@ enum {
 
 // TODO: upgrade deprecated function usage in these functions.
 void setZeroSuppressionInterval();
-void avoidSupression();
+void avoidSuppression();
 void logCursorVisibility();
 void avoidHesitatingCursor();
 
@@ -588,7 +588,7 @@ void OSXScreen::get_drop_target_thread()
 #if defined(MAC_OS_X_VERSION_10_7)
 	char* cstr = NULL;
 
-	// wait for 5 secs for the drop destinaiton string to be filled.
+	// wait for 5 secs for the drop destination string to be filled.
 	UInt32 timeout = ARCH->time() + 5;
 
 	while (ARCH->time() < timeout) {
@@ -848,7 +848,7 @@ OSXScreen::enter()
 			IOObjectRelease(entry);
 		}
 
-		avoidSupression();
+		avoidSuppression();
 	}
 
 	// now on screen
@@ -2124,17 +2124,17 @@ setZeroSuppressionInterval()
 }
 
 void
-avoidSupression()
+avoidSuppression()
 {
 	// avoid suppression of local hardware events
 	// stkamp@users.sourceforge.net
-	CGSetLocalEventsFilterDuringSupressionState(
+	CGSetLocalEventsFilterDuringSuppressionState(
 							kCGEventFilterMaskPermitAllEvents,
-							kCGEventSupressionStateSupressionInterval);
-	CGSetLocalEventsFilterDuringSupressionState(
+							kCGEventSuppressionStateSuppressionInterval);
+	CGSetLocalEventsFilterDuringSuppressionState(
 							(kCGEventFilterMaskPermitLocalKeyboardEvents |
 							kCGEventFilterMaskPermitSystemDefinedEvents),
-							kCGEventSupressionStateRemoteMouseDrag);
+							kCGEventSuppressionStateRemoteMouseDrag);
 }
 
 void

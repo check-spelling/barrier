@@ -85,7 +85,7 @@ public:
     //! Get tooltip
     /*!
     Returns the tool tip to display in the task bar.  The interface
-    to set the tooltip is left to sublclasses.  Getting and setting
+    to set the tooltip is left to subclasses.  Getting and setting
     the icon must be thread safe.
     */
     virtual std::string getToolTip() const = 0;

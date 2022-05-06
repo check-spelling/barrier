@@ -525,7 +525,7 @@ MSWindowsWatchdog::shutdownExistingProcesses()
             if (err != ERROR_NO_MORE_FILES) {
 
                 // only worry about error if it's not the end of the snapshot
-                LOG((CLOG_ERR "could not get subsiquent process entry"));
+                LOG((CLOG_ERR "could not get subsequent process entry"));
                 throw XArch(new XArchEvalWindows);
             }
         }

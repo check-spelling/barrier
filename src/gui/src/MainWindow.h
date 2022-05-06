@@ -83,7 +83,7 @@ class MainWindow : public QMainWindow, public Ui::MainWindowBase
             Info
         };
 
-        enum qRuningState {
+        enum qRunningState {
             kStarted,
             kStopped
         };
@@ -193,7 +193,7 @@ public slots:
         bool m_SuppressAutoConfigWarning;
         CommandProcess* m_BonjourInstall;
         bool m_SuppressEmptyServerWarning;
-        qRuningState m_ExpectedRunningState;
+        qRunningState m_ExpectedRunningState;
         QMutex m_StopDesktopMutex;
         SslCertificate* m_pSslCertificate;
         QStringList m_PendingClientNames;

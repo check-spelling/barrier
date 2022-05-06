@@ -95,33 +95,33 @@ TEST(GenericArgsParsingTests, parseGenericArgs_logFileCmdWithSpace_saveLogFilena
     EXPECT_EQ(2, i);
 }
 
-TEST(GenericArgsParsingTests, parseGenericArgs_noDeamonCmd_daemonFalse)
+TEST(GenericArgsParsingTests, parseGenericArgs_noDaemonCmd_daemonFalse)
 {
     int i = 1;
     const int argc = 2;
-    const char* kNoDeamonCmd[argc] = { "stub", "-f" };
+    const char* kNoDaemonCmd[argc] = { "stub", "-f" };
 
     ArgParser argParser(NULL);
     ArgsBase argsBase;
     argParser.setArgsBase(argsBase);
 
-    argParser.parseGenericArgs(argc, kNoDeamonCmd, i);
+    argParser.parseGenericArgs(argc, kNoDaemonCmd, i);
 
     EXPECT_FALSE(argsBase.m_daemon);
     EXPECT_EQ(1, i);
 }
 
-TEST(GenericArgsParsingTests, parseGenericArgs_deamonCmd_daemonTrue)
+TEST(GenericArgsParsingTests, parseGenericArgs_daemonCmd_daemonTrue)
 {
     int i = 1;
     const int argc = 2;
-    const char* kDeamonCmd[argc] = { "stub", "--daemon" };
+    const char* kDaemonCmd[argc] = { "stub", "--daemon" };
 
     ArgParser argParser(NULL);
     ArgsBase argsBase;
     argParser.setArgsBase(argsBase);
 
-    argParser.parseGenericArgs(argc, kDeamonCmd, i);
+    argParser.parseGenericArgs(argc, kDaemonCmd, i);
 
     EXPECT_EQ(true, argsBase.m_daemon);
     EXPECT_EQ(1, i);

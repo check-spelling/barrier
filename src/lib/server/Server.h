@@ -315,7 +315,7 @@ private:
     void                handleFakeInputBeginEvent(const Event&, void*);
     void                handleFakeInputEndEvent(const Event&, void*);
     void                handleFileChunkSendingEvent(const Event&, void*);
-    void                handleFileRecieveCompletedEvent(const Event&, void*);
+    void                handleFileReceiveCompletedEvent(const Event&, void*);
 
     // event processing
     void                onClipboardChanged(BaseClientProxy* sender,
@@ -332,7 +332,7 @@ private:
     void                onMouseMoveSecondary(SInt32 dx, SInt32 dy);
     void                onMouseWheel(SInt32 xDelta, SInt32 yDelta);
     void                onFileChunkSending(const void* data);
-    void                onFileRecieveCompleted();
+    void                onFileReceiveCompleted();
 
     // add client to list and attach event handlers for client
     bool                addClient(BaseClientProxy*);

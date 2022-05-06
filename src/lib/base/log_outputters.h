@@ -159,10 +159,10 @@ private:
 /*!
 The level for each message is ignored.
 */
-class MesssageBoxLogOutputter : public ILogOutputter {
+class MessageBoxLogOutputter : public ILogOutputter {
 public:
-    MesssageBoxLogOutputter();
-    virtual ~MesssageBoxLogOutputter();
+    MessageBoxLogOutputter();
+    virtual ~MessageBoxLogOutputter();
 
     // ILogOutputter overrides
     virtual void        open(const char* title);

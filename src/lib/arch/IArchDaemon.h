@@ -24,7 +24,7 @@
 //! Interface for architecture dependent daemonizing
 /*!
 This interface defines the operations required by barrier for installing
-uninstalling daeamons and daemonizing a process.  Each architecture must
+uninstalling daemons and daemonizing a process.  Each architecture must
 implement this interface.
 */
 class IArchDaemon : public IInterface {

@@ -193,7 +193,7 @@ ClientApp::updateStatus(const String& msg)
 void
 ClientApp::resetRestartTimeout()
 {
-    // retry time can nolonger be changed
+    // retry time can no longer be changed
     //s_retryTime = 0.0;
 }
 

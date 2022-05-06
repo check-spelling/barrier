@@ -90,10 +90,10 @@ Client::Client(IEventQueue* events, const std::string& name, const NetworkAddres
                                 this,
                                 new TMethodEventJob<Client>(this,
                                     &Client::handleFileChunkSending));
-        m_events->adoptHandler(m_events->forFile().fileRecieveCompleted(),
+        m_events->adoptHandler(m_events->forFile().fileReceiveCompleted(),
                                 this,
                                 new TMethodEventJob<Client>(this,
-                                    &Client::handleFileRecieveCompleted));
+                                    &Client::handleFileReceiveCompleted));
     }
 }
 
@@ -140,7 +140,7 @@ Client::connect()
         // Priddy.
         m_serverAddress.resolve();
 
-        // m_serverAddress will be null if the hostname address is not reolved
+        // m_serverAddress will be null if the hostname address is not resolved
         if (m_serverAddress.getAddress() != NULL) {
           // to help users troubleshoot, show server host name (issue: 60)
           LOG((CLOG_NOTE "connecting to '%s': %s:%i",
@@ -750,13 +750,13 @@ Client::handleFileChunkSending(const Event& event, void*)
 }
 
 void
-Client::handleFileRecieveCompleted(const Event& event, void*)
+Client::handleFileReceiveCompleted(const Event& event, void*)
 {
-    onFileRecieveCompleted();
+    onFileReceiveCompleted();
 }
 
 void
-Client::onFileRecieveCompleted()
+Client::onFileReceiveCompleted()
 {
     if (isReceivedFileSizeValid()) {
         m_writeToDropDirThread = new Thread([this](){ write_to_drop_dir_thread(); });

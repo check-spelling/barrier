@@ -65,7 +65,7 @@ std::string MSWindowsUtil::getErrorString(HINSTANCE hinstance, DWORD error, DWOR
 This is a quick and dirty iterative CreateDirectory() wrapper that does zero
 error checking. A much better cross-platform option exists in C++17 via
 std::filesystem. If/when the project is updated to use 17 this function should
-absolutley be replaced!
+absolutely be replaced!
 
 */
 

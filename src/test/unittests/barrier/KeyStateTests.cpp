@@ -216,7 +216,7 @@ TEST(KeyStateTests, updateKeyState_activeModifiers_maskNotSet)
     ASSERT_EQ(0, actual);
 }
 
-TEST(KeyStateTests, updateKeyState_activeModifiers_keyMapGotModifers)
+TEST(KeyStateTests, updateKeyState_activeModifiers_keyMapGotModifiers)
 {
     MockKeyMap keyMap;
     MockEventQueue eventQueue;
@@ -252,7 +252,7 @@ TEST(KeyStateTests, setHalfDuplexMask_numLock_halfDuplexNumLockAdded)
     keyState.setHalfDuplexMask(KeyModifierNumLock);
 }
 
-TEST(KeyStateTests, setHalfDuplexMask_scrollLock_halfDuplexScollLockAdded)
+TEST(KeyStateTests, setHalfDuplexMask_scrollLock_halfDuplexScrollLockAdded)
 {
     MockKeyMap keyMap;
     MockEventQueue eventQueue;

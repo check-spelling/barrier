@@ -187,7 +187,7 @@ public:
     //! Force a thread to exit
     /*!
     Causes \c thread to exit when it next calls a cancellation point.
-    A thread avoids cancellation as long as it nevers calls a
+    A thread avoids cancellation as long as it never calls a
     cancellation point.  Once it begins the cancellation process it
     must always let cancellation go to completion but may take as
     long as necessary to clean up.
