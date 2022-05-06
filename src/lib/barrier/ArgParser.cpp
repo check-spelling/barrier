@@ -473,7 +473,7 @@ ArgParser::assembleCommand(std::vector<String>& argsArray,  String ignoreArg, in
         }
 
         result.append(*it);
-        // add space to saperate args
+        // add space to separate args
         result.append(" ");
     }
 
