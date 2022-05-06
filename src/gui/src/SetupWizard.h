@@ -30,7 +30,7 @@ class SetupWizard : public QWizard, public Ui::SetupWizardBase
     Q_OBJECT
 public:
     enum {
-        kMaximiumLoginAttemps = 3
+        kMaximiumLoginAttempts = 3
     };
 
 public:
