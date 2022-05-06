@@ -347,7 +347,7 @@ barrier (2.3.2) disco; urgency=medium
   * Feature: CMake now generates compile_commands.json
 
   [ Thomas Thorne ]
-  * Reference Only Microsoft Azue Pipelines In Readme.md
+  * Reference Only Microsoft Azure Pipelines In Readme.md
   * Delete .travis.yml As We Switch To Azure Pipelines
 
   [ Evan Maddock ]
