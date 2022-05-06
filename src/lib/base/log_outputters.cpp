@@ -290,39 +290,39 @@ void
 FileLogOutputter::show(bool showIfEmpty) {}
 
 //
-// MesssageBoxLogOutputter
+// MessageBoxLogOutputter
 //
 
-MesssageBoxLogOutputter::MesssageBoxLogOutputter()
+MessageBoxLogOutputter::MessageBoxLogOutputter()
 {
     // do nothing
 }
 
-MesssageBoxLogOutputter::~MesssageBoxLogOutputter()
-{
-    // do nothing
-}
-
-void
-MesssageBoxLogOutputter::open(const char* title)
+MessageBoxLogOutputter::~MessageBoxLogOutputter()
 {
     // do nothing
 }
 
 void
-MesssageBoxLogOutputter::close()
+MessageBoxLogOutputter::open(const char* title)
 {
     // do nothing
 }
 
 void
-MesssageBoxLogOutputter::show(bool showIfEmpty)
+MessageBoxLogOutputter::close()
+{
+    // do nothing
+}
+
+void
+MessageBoxLogOutputter::show(bool showIfEmpty)
 {
     // do nothing
 }
 
 bool
-MesssageBoxLogOutputter::write(ELevel level, const char* msg)
+MessageBoxLogOutputter::write(ELevel level, const char* msg)
 {
     // don't spam user with messages.
     if (level > kERROR) {
