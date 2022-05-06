@@ -111,7 +111,7 @@ private:
     std::string                m_name;
 };
 
-//! Generic exit eception
+//! Generic exit exception
 /*!
 Thrown when we want to abort, with the opportunity to clean up. This is a
 little bit of a hack, but it's a better way of exiting, than just calling
