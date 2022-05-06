@@ -58,7 +58,7 @@ enum {
 
 // TODO: upgrade deprecated function usage in these functions.
 void setZeroSuppressionInterval();
-void avoidSupression();
+void avoidSuppression();
 void logCursorVisibility();
 void avoidHesitatingCursor();
 
@@ -848,7 +848,7 @@ OSXScreen::enter()
 			IOObjectRelease(entry);
 		}
 
-		avoidSupression();
+		avoidSuppression();
 	}
 
 	// now on screen
@@ -2124,17 +2124,17 @@ setZeroSuppressionInterval()
 }
 
 void
-avoidSupression()
+avoidSuppression()
 {
 	// avoid suppression of local hardware events
 	// stkamp@users.sourceforge.net
-	CGSetLocalEventsFilterDuringSupressionState(
+	CGSetLocalEventsFilterDuringSuppressionState(
 							kCGEventFilterMaskPermitAllEvents,
-							kCGEventSupressionStateSupressionInterval);
-	CGSetLocalEventsFilterDuringSupressionState(
+							kCGEventSuppressionStateSuppressionInterval);
+	CGSetLocalEventsFilterDuringSuppressionState(
 							(kCGEventFilterMaskPermitLocalKeyboardEvents |
 							kCGEventFilterMaskPermitSystemDefinedEvents),
-							kCGEventSupressionStateRemoteMouseDrag);
+							kCGEventSuppressionStateRemoteMouseDrag);
 }
 
 void
