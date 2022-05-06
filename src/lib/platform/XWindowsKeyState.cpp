@@ -637,7 +637,7 @@ XWindowsKeyState::updateKeysymMapXKB(barrier::KeyMap& keyMap)
                     (type->preserve[j].mask & LockMask) != 0) {
                     // sensitive caps lock and we preserve caps-lock.
                     // preserving caps-lock means we Xlib functions would
-                    // yield the capitialized KeySym so we'll adjust the
+                    // yield the capitalized KeySym so we'll adjust the
                     // level accordingly.
                     if ((level ^ 1) < type->num_levels) {
                         level ^= 1;
