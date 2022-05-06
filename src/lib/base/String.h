@@ -71,9 +71,9 @@ Finds the last dot and remove all characters from the dot to the end
 */
 std::string removeFileExt(std::string filename);
 
-//! Convert into hexdecimal
+//! Convert into hexadecimal
 /*!
-Convert each character in \c subject into hexdecimal form with \c width
+Convert each character in \c subject into hexadecimal form with \c width
 */
 std::string to_hex(const std::vector<std::uint8_t>& subject, int width, const char fill = '0');
 
