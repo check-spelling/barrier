@@ -588,7 +588,7 @@ void OSXScreen::get_drop_target_thread()
 #if defined(MAC_OS_X_VERSION_10_7)
 	char* cstr = NULL;
 
-	// wait for 5 secs for the drop destinaiton string to be filled.
+	// wait for 5 secs for the drop destination string to be filled.
 	UInt32 timeout = ARCH->time() + 5;
 
 	while (ARCH->time() < timeout) {
