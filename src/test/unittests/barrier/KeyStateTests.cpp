@@ -252,7 +252,7 @@ TEST(KeyStateTests, setHalfDuplexMask_numLock_halfDuplexNumLockAdded)
     keyState.setHalfDuplexMask(KeyModifierNumLock);
 }
 
-TEST(KeyStateTests, setHalfDuplexMask_scrollLock_halfDuplexScollLockAdded)
+TEST(KeyStateTests, setHalfDuplexMask_scrollLock_halfDuplexScrollLockAdded)
 {
     MockKeyMap keyMap;
     MockEventQueue eventQueue;
