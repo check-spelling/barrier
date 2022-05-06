@@ -86,9 +86,9 @@ Convert each character in \c subject to uppercase
 */
 void uppercase(std::string& subject);
 
-//! Remove all specific char in suject
+//! Remove all specific char in subject
 /*!
-Remove all specific \c c in \c suject
+Remove all specific \c c in \c subject
 */
 void removeChar(std::string& subject, const char c);
 
