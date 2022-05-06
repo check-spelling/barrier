@@ -112,7 +112,7 @@ std::vector<std::string> splitString(std::string string, const char c);
 
 //! Case-insensitive comparisons
 /*!
-This class provides case-insensitve comparison functions.
+This class provides case-insensitive comparison functions.
 */
 class CaselessCmp {
     public:
