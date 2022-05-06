@@ -634,7 +634,7 @@ SecureSocket::checkResult(int status, int& retry)
                 LOG((CLOG_ERR "eof violates ssl protocol"));
             }
             else if (status == -1) {
-                // underlying socket I/O reproted an error
+                // underlying socket I/O reported an error
                 try {
                     ARCH->throwErrorOnSocket(getSocket());
                 }
