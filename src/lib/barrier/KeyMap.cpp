@@ -735,7 +735,7 @@ KeyMap::keyForModifier(KeyButton button, SInt32 group,
 
     // find a key that generates the given modifier in the given group
     // but doesn't use the given button, presumably because we're trying
-    // to generate a KeyID that's only bound the the given button.
+    // to generate a KeyID that's only bound the given button.
     // this is important when a shift button is modified by shift;  we
     // must use the other shift button to do the shifting.
     const ModifierKeyItemList& items =
