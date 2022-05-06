@@ -216,7 +216,7 @@ TEST(KeyStateTests, updateKeyState_activeModifiers_maskNotSet)
     ASSERT_EQ(0, actual);
 }
 
-TEST(KeyStateTests, updateKeyState_activeModifiers_keyMapGotModifers)
+TEST(KeyStateTests, updateKeyState_activeModifiers_keyMapGotModifiers)
 {
     MockKeyMap keyMap;
     MockEventQueue eventQueue;

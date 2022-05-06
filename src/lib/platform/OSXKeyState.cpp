@@ -617,7 +617,7 @@ OSXKeyState::fakeKey(const Keystroke& keystroke)
 void
 OSXKeyState::getKeyMapForSpecialKeys(barrier::KeyMap& keyMap, SInt32 group) const
 {
-    // special keys are insensitive to modifers and none are dead keys
+    // special keys are insensitive to modifiers and none are dead keys
     barrier::KeyMap::KeyItem item;
     for (size_t i = 0; i < sizeof(s_controlKeys) /
                                 sizeof(s_controlKeys[0]); ++i) {
