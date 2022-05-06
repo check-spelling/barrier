@@ -191,10 +191,10 @@ Server::Server(
 								this,
 								new TMethodEventJob<Server>(this,
 									&Server::handleFileChunkSendingEvent));
-		m_events->adoptHandler(m_events->forFile().fileRecieveCompleted(),
+		m_events->adoptHandler(m_events->forFile().fileReceiveCompleted(),
 								this,
 								new TMethodEventJob<Server>(this,
-									&Server::handleFileRecieveCompletedEvent));
+									&Server::handleFileReceiveCompletedEvent));
 	}
 
 	// add connection
@@ -1528,9 +1528,9 @@ Server::handleFileChunkSendingEvent(const Event& event, void*)
 }
 
 void
-Server::handleFileRecieveCompletedEvent(const Event& event, void*)
+Server::handleFileReceiveCompletedEvent(const Event& event, void*)
 {
-	onFileRecieveCompleted();
+	onFileReceiveCompleted();
 }
 
 void
@@ -2078,7 +2078,7 @@ Server::onFileChunkSending(const void* data)
 }
 
 void
-Server::onFileRecieveCompleted()
+Server::onFileReceiveCompleted()
 {
 	if (isReceivedFileSizeValid()) {
         m_writeToDropDirThread = new Thread([this]() { write_to_drop_dir_thread(); });
