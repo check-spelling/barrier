@@ -140,7 +140,7 @@ Client::connect()
         // Priddy.
         m_serverAddress.resolve();
 
-        // m_serverAddress will be null if the hostname address is not reolved
+        // m_serverAddress will be null if the hostname address is not resolved
         if (m_serverAddress.getAddress() != NULL) {
           // to help users troubleshoot, show server host name (issue: 60)
           LOG((CLOG_NOTE "connecting to '%s': %s:%i",
